@@ -14,7 +14,7 @@ if __name__ == '__main__':
                 patience=3000, 
                 close_mosaic=10,
                 workers=16,
-                device='cpu',
+                device='cuda',
                 # optimizer='SGD', # using SGD 
                 # resume='', # last.pt path
                 # amp=False, # close amp
