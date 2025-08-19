@@ -5,7 +5,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     model = YOLO('ultralytics/cfg/models/v8/gd-yolov8.yaml', task='detect') # select your model.yaml path
-    model.load('yolov8n.pt') # loading pretrain weights
+    model.load('/kaggle/working/FireDET/yolov8n.pt') # loading pretrain weights
     model.train(data='dataset/data.yaml',
                 cache=False,
                 imgsz=640,
