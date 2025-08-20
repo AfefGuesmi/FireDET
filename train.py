@@ -19,6 +19,6 @@ if __name__ == '__main__':
                 # resume='', # last.pt path
                 # amp=False, # close amp
                 # fraction=0.2,
-                project='runs/train',
+                project='FireDET',
                 name='test1',
                 )
