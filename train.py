@@ -21,4 +21,5 @@ if __name__ == '__main__':
                 # fraction=0.2,
                 project='FireDET',
                 name='test1',
+                wandb = False
                 )
