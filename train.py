@@ -2,6 +2,7 @@ import warnings
 warnings.filterwarnings('ignore')
 import os
 os.environ["WANDB_MODE"] = "disabled"
+os.environ["RAY_DISABLE_IMPORT_WARNING"] = "1"
 
 from ultralytics import YOLO
 
@@ -12,11 +13,11 @@ if __name__ == '__main__':
     model.train(data='dataset/data.yaml',
                 cache=False,
                 imgsz=640,
-                epochs=10000,
-                batch=8,
-                patience=3000, 
+                epochs=100,
+                batch=16,
+                patience=10,
                 close_mosaic=10,
-                workers=16,
+                workers=4,
                 device='cuda',
                 # optimizer='SGD', # using SGD 
                 # resume='', # last.pt path
