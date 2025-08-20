@@ -1,5 +1,8 @@
 import warnings
 warnings.filterwarnings('ignore')
+import os
+os.environ["WANDB_MODE"] = "disabled"
+
 from ultralytics import YOLO
 
 
@@ -20,6 +23,5 @@ if __name__ == '__main__':
                 # amp=False, # close amp
                 # fraction=0.2,
                 project='FireDET',
-                name='test1',
-                wandb = False
+                name='test1'
                 )
