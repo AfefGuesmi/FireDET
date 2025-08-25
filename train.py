@@ -8,8 +8,8 @@ from ultralytics import YOLO
 
 
 if __name__ == '__main__':
-    model = YOLO('ultralytics/cfg/models/v8/gd-yolov8.yaml', task='detect') # select your model.yaml path
-    model.load('yolov8n.pt') # loading pretrain weights
+    model = YOLO('yolov8n.pt') # select your model.yaml path
+    #model.load('yolov8n.pt') # loading pretrain weights
     model.train(data='dataset/data.yaml',
                 cache=False,
                 imgsz=640,
@@ -18,7 +18,7 @@ if __name__ == '__main__':
                 patience=10,
                 close_mosaic=10,
                 workers=4,
-                device='cuda',
+                device='cpu',
                 # optimizer='SGD', # using SGD 
                 # resume='', # last.pt path
                 # amp=False, # close amp
