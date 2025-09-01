@@ -24,5 +24,6 @@ if __name__ == '__main__':
                 # amp=False, # close amp
                 # fraction=0.2,
                 project='FireDET',
-                name='test1'
+                name='test1' ,
+                resume=True
                 )
