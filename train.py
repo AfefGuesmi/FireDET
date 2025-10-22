@@ -36,7 +36,7 @@ if __name__ == '__main__':
                 patience=10,
                 close_mosaic=10,
                 workers=0,
-                device='gpu',
+                device='cpu',
                 project='FireDET',
                 name='test1',
                 resume=True
