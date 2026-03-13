@@ -281,4 +281,4 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 ---
 
-*For questions or collaborations, please open an issue or contact [afef.guesmi@example.com](mailto:afef.guesmi@example.com).*
+*For questions or collaborations, please open an issue or contact [afefgsm078@gmail.com](mailto:afefgsm078@gmail.com).*
